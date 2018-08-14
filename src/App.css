@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+.bodyOne {
+  background: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg'); 
+   background-position: center; 
+   background-size: cover;
+   height: 800px;
+}
+
+nav {
+  position: fixed;
+  background: black;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+
+.header{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.brand {
+  color: #fed136;
+  font-size: 1.25rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.menuButton  {
+  cursor: pointer;
+  background: #fed136; 
+  color: #fff;
+  border-radius: .25rem;
+  font-size: 12px;
+  font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 13px;
+}
+
+.menuButton > div {
+  display: inline-block;
+}
+
+.navMenuList {
+  height: 0;
+  margin: 0;
+  transition: .5s;
+  opacity: 0;
+  overflow: hidden;
+  padding-left: 110px;
+}
+
+.open {
+  margin-top: 15px;
+  opacity: 1;
+  height: 180px;
+
+}
+
+.navMenuOption {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+list-style-type: none;
+}
+
+.large {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .small {
+    display: none;
+  }
+
+  .large {
+    display: initial;
+    min-width: 200px;
+  } 
+
+  .brand {
+    font-size: 30px;
+  }
+  .header {
+    padding: 0 50px;
+  }
+  nav {
+    background: transparent;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .header {
+    justify-content: space-between;
+    padding: 0;
+  }
+}
